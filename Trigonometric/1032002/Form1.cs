@@ -108,7 +108,7 @@ namespace _1032002
             Glu.gluOrtho2D(count * -Math.PI, count * Math.PI, -2.0f, 2.0f);
             Gl.glColor3d(0.0, 0.0, 0.0); //black
             Gl.glBegin(Gl.GL_LINE_STRIP);
-                for (double x = count * -2 * Math.PI; x <= count * 2 * Math.PI; x += 0.005)
+                for (double x = count * -Math.PI; x <= count * Math.PI; x += 0.005)
                 {
                     double fx = Math.Sin(x);
                     Gl.glVertex2d(x, fx);
@@ -121,7 +121,7 @@ namespace _1032002
             Glu.gluOrtho2D(count * -Math.PI, count * Math.PI, -2.0f, 2.0f);
             Gl.glColor3d(0.0, 0.0, 0.0); //black
             Gl.glBegin(Gl.GL_LINE_STRIP);
-                for (double x = count * -2 * Math.PI; x <= count * 2 * Math.PI; x += 0.005)
+                for (double x = count * -Math.PI; x <= count * Math.PI; x += 0.005)
                 {
                     double fx = Math.Cos(x);
                     Gl.glVertex2d(x, fx);
@@ -177,7 +177,7 @@ namespace _1032002
             Glu.gluOrtho2D(count * -Math.PI, count * Math.PI, -2.0f, 2.0f);
             Gl.glColor3d(0.0, 0.0, 0.0); //black
             Gl.glBegin(Gl.GL_LINE_STRIP);
-                for (double x = count * -2 * Math.PI; x <= count * 2 * Math.PI; x += 0.005)
+                for (double x = count * -Math.PI; x <= count * Math.PI; x += 0.005)
                 {
                     double fx = 1 / Math.Cos(x);
                     if (Math.Abs(Math.Tan(x) - Math.Tan(x - 0.01)) > 1)
